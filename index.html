@@ -1,0 +1,715 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#111114">
+    <meta name="description" content="Discover rare art, antiques, fine jewelry and luxury collectibles at Auction House.">
+    <title>Auction House | Exceptional Finds. Extraordinary Stories.</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ANNOUNCEMENT BAR -->
+    <div class="announcement-bar">
+        <span>✦</span> THE ART OF DISCOVERY
+        <span class="announcement-divider">|</span>
+        Extraordinary objects. Extraordinary stories.
+    </div>
+
+    <!-- HEADER -->
+    <header class="site-header">
+        <div class="container nav-container">
+            <a href="#home" class="brand">
+                <span class="brand-icon">A</span>
+                <span class="brand-text">
+                    <strong>AUCTION HOUSE</strong>
+                    <small>EST. 1986 · FINE OBJECTS</small>
+                </span>
+            </a>
+
+            <button class="menu-toggle" id="menuToggle"
+                    aria-label="Toggle navigation" aria-expanded="false">
+                ☰
+            </button>
+
+            <nav class="main-nav" id="mainNav">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#auctions" class="nav-link">Auctions</a>
+                <a href="#categories" class="nav-link">Collections</a>
+                <a href="#calendar" class="nav-link">Calendar</a>
+                <a href="#about" class="nav-link">Our Story</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="header-actions">
+                <button class="icon-button" id="themeToggle"
+                        aria-label="Toggle theme" title="Toggle theme">☼</button>
+                <button class="icon-button" id="watchlistButton"
+                        aria-label="View watchlist" title="My watchlist">♡</button>
+                <button class="btn btn-outline btn-small" id="loginButton">Sign In</button>
+                <button class="btn btn-gold btn-small" id="registerButton">Join Us ↗</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO -->
+        <section class="hero-section" id="home">
+            <div class="hero-image"></div>
+            <div class="hero-overlay"></div>
+
+            <div class="container hero-content">
+                <div class="eyebrow">
+                    <span class="eyebrow-line"></span>
+                    THE AUTUMN COLLECTION · 2026
+                </div>
+
+                <h1>Own a piece<br>of <em>history.</em></h1>
+
+                <p class="hero-description">
+                    Discover extraordinary art, timeless antiques and
+                    rare treasures. Every object has a story. Make it yours.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#auctions" class="btn btn-gold">
+                        Explore Auctions <span>↗</span>
+                    </a>
+                    <a href="#about" class="btn btn-glass">Discover Our Story</a>
+                </div>
+
+                <div class="hero-stats">
+                    <div>
+                        <strong>2,400<span>+</span></strong>
+                        <small>Exceptional Lots</small>
+                    </div>
+                    <div>
+                        <strong>38</strong>
+                        <small>Countries Reached</small>
+                    </div>
+                    <div>
+                        <strong>98<span>%</span></strong>
+                        <small>Buyer Satisfaction</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-side-note">CULTURE · CRAFT · COLLECTING</div>
+        </section>
+
+        <!-- TRUST STRIP -->
+        <section class="trust-strip">
+            <div class="container trust-grid">
+                <div><span>✧</span> Expertly Curated</div>
+                <div><span>◇</span> Authenticity Focused</div>
+                <div><span>♧</span> Trusted Worldwide</div>
+                <div><span>↗</span> Secure Simulated Bidding</div>
+            </div>
+        </section>
+
+        <!-- FEATURED AUCTIONS -->
+        <section class="section section-dark" id="auctions">
+            <div class="container">
+                <div class="section-heading">
+                    <div>
+                        <div class="eyebrow">THE COLLECTION</div>
+                        <h2>Exceptional <em>auctions.</em></h2>
+                        <p>Objects of distinction, waiting for their next chapter.</p>
+                    </div>
+                    <a href="#allAuctions" class="text-link">View all lots ↗</a>
+                </div>
+
+                <div class="featured-auction" id="featuredAuction">
+                    <div class="featured-image">
+                        <img id="featuredImage"
+                             src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?auto=format&fit=crop&w=1200&q=85"
+                             alt="Fine art painting">
+                        <span class="featured-badge">FEATURED LOT</span>
+                    </div>
+                    <div class="featured-info">
+                        <div class="eyebrow">LOT NO. <span id="featuredLot">001</span></div>
+                        <h3 id="featuredTitle">The Art of a Timeless Era</h3>
+                        <p id="featuredDescription">
+                            A remarkable work selected for our signature collection.
+                        </p>
+                        <div class="featured-price">
+                            <span>Current bid</span>
+                            <strong id="featuredPrice">₹72,000</strong>
+                        </div>
+                        <div class="countdown-label">AUCTION ENDS IN</div>
+                        <div class="countdown" id="featuredCountdown">
+                            <div><strong>00</strong><small>DAYS</small></div>
+                            <div><strong>00</strong><small>HOURS</small></div>
+                            <div><strong>00</strong><small>MINUTES</small></div>
+                            <div><strong>00</strong><small>SECONDS</small></div>
+                        </div>
+                        <div class="featured-actions">
+                            <button class="btn btn-gold" id="featuredBidButton">
+                                Place a Bid ↗
+                            </button>
+                            <button class="btn btn-outline" id="featuredDetailsButton">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AUCTION SEARCH AND FILTERS -->
+                <div class="auction-toolbar" id="allAuctions">
+                    <div class="search-box">
+                        <span>⌕</span>
+                        <input type="search" id="auctionSearch"
+                               placeholder="Search artworks, watches, antiques...">
+                    </div>
+
+                    <select id="categoryFilter" aria-label="Filter by category">
+                        <option value="all">All Categories</option>
+                        <option value="Art">Art & Paintings</option>
+                        <option value="Antiques">Antiques & Collectibles</option>
+                        <option value="Jewelry">Jewelry & Watches</option>
+                        <option value="Luxury">Luxury & Automobiles</option>
+                    </select>
+
+                    <select id="priceFilter" aria-label="Filter by price">
+                        <option value="all">All Prices</option>
+                        <option value="under50000">Under ₹50,000</option>
+                        <option value="50000to200000">₹50,000 – ₹2,00,000</option>
+                        <option value="above200000">Above ₹2,00,000</option>
+                    </select>
+
+                    <select id="sortFilter" aria-label="Sort auctions">
+                        <option value="ending">Ending Soon</option>
+                        <option value="priceLow">Price: Low to High</option>
+                        <option value="priceHigh">Price: High to Low</option>
+                        <option value="newest">Newest First</option>
+                    </select>
+
+                    <label class="premium-filter">
+                        <input type="checkbox" id="premiumFilter">
+                        <span>✦ Premium Only</span>
+                    </label>
+                </div>
+
+                <div class="results-line">
+                    <span id="resultsCount">Loading auctions...</span>
+                    <button class="text-link" id="clearFilters">Clear filters ×</button>
+                </div>
+
+                <div class="auction-grid" id="auctionGrid">
+                    <!-- Auction cards generated by script.js -->
+                </div>
+
+                <div class="empty-state" id="emptyAuctions" hidden>
+                    <span>◇</span>
+                    <h3>No auctions found</h3>
+                    <p>Try changing your search or filter options.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CATEGORIES -->
+        <section class="section section-darker" id="categories">
+            <div class="container">
+                <div class="section-heading">
+                    <div>
+                        <div class="eyebrow">EXPLORE BY INTEREST</div>
+                        <h2>Collect what <em>moves you.</em></h2>
+                        <p>From masterpieces to rare finds, begin your journey here.</p>
+                    </div>
+                </div>
+
+                <div class="category-grid">
+                    <button class="category-card"
+                            data-category="Art">
+                        <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?auto=format&fit=crop&w=700&q=80"
+                             alt="Art and paintings">
+                        <span class="category-number">01 / COLLECTION</span>
+                        <span class="category-title">Art & Paintings</span>
+                        <span class="category-arrow">↗</span>
+                    </button>
+
+                    <button class="category-card"
+                            data-category="Antiques">
+                        <img src="https://images.unsplash.com/photo-1577083552431-6e5fd01aa342?auto=format&fit=crop&w=700&q=80"
+                             alt="Antiques and collectibles">
+                        <span class="category-number">02 / COLLECTION</span>
+                        <span class="category-title">Antiques & Collectibles</span>
+                        <span class="category-arrow">↗</span>
+                    </button>
+
+                    <button class="category-card"
+                            data-category="Jewelry">
+                        <img src="https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=700&q=80"
+                             alt="Fine jewelry">
+                        <span class="category-number">03 / COLLECTION</span>
+                        <span class="category-title">Jewelry & Watches</span>
+                        <span class="category-arrow">↗</span>
+                    </button>
+
+                    <button class="category-card"
+                            data-category="Luxury">
+                        <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=700&q=80"
+                             alt="Luxury automobiles">
+                        <span class="category-number">04 / COLLECTION</span>
+                        <span class="category-title">Luxury & Automobiles</span>
+                        <span class="category-arrow">↗</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- HOW IT WORKS -->
+        <section class="section how-section">
+            <div class="container">
+                <div class="section-heading centered-heading">
+                    <div>
+                        <div class="eyebrow">YOUR NEXT DISCOVERY</div>
+                        <h2>The art of <em>the bid.</em></h2>
+                        <p>A considered, straightforward way to collect exceptional objects.</p>
+                    </div>
+                </div>
+
+                <div class="steps-grid">
+                    <article class="step-card">
+                        <span class="step-number">01</span>
+                        <div class="step-icon">⌕</div>
+                        <h3>Discover</h3>
+                        <p>Explore curated collections and find something extraordinary.</p>
+                    </article>
+                    <article class="step-card">
+                        <span class="step-number">02</span>
+                        <div class="step-icon">♧</div>
+                        <h3>Register</h3>
+                        <p>Create your bidder account and save lots to your watchlist.</p>
+                    </article>
+                    <article class="step-card">
+                        <span class="step-number">03</span>
+                        <div class="step-icon">↗</div>
+                        <h3>Place Your Bid</h3>
+                        <p>Follow the action and make a bid that meets the minimum increment.</p>
+                    </article>
+                    <article class="step-card">
+                        <span class="step-number">04</span>
+                        <div class="step-icon">✧</div>
+                        <h3>Make It Yours</h3>
+                        <p>Review your winning lots and explore the simulated payment history.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- AUCTION CALENDAR -->
+        <section class="section section-dark" id="calendar">
+            <div class="container">
+                <div class="section-heading">
+                    <div>
+                        <div class="eyebrow">SAVE THE DATE</div>
+                        <h2>The auction <em>calendar.</em></h2>
+                        <p>Keep an eye on upcoming sales and featured events.</p>
+                    </div>
+                </div>
+                <div class="calendar-panel" id="calendarEvents">
+                    <!-- Calendar events generated by script.js -->
+                </div>
+            </div>
+        </section>
+
+        <!-- DASHBOARD -->
+        <section class="section section-darker" id="dashboard">
+            <div class="container">
+                <div class="section-heading">
+                    <div>
+                        <div class="eyebrow">YOUR PRIVATE COLLECTION</div>
+                        <h2>My <em>dashboard.</em></h2>
+                        <p>Keep track of your bidding activity and listings.</p>
+                    </div>
+                    <span class="user-status" id="dashboardUser">Guest Account</span>
+                </div>
+
+                <div class="dashboard-tabs" role="tablist">
+                    <button class="dashboard-tab active" data-tab="myBids">My Bids</button>
+                    <button class="dashboard-tab" data-tab="myWatchlist">Watchlist</button>
+                    <button class="dashboard-tab" data-tab="myWins">Won Items</button>
+                    <button class="dashboard-tab" data-tab="myPayments">Payments</button>
+                    <button class="dashboard-tab" data-tab="myListings">Seller Listings</button>
+                </div>
+
+                <div class="dashboard-summary">
+                    <div class="summary-card">
+                        <span>Active Bids</span>
+                        <strong id="activeBidsCount">0</strong>
+                    </div>
+                    <div class="summary-card">
+                        <span>Watched Lots</span>
+                        <strong id="watchlistCount">0</strong>
+                    </div>
+                    <div class="summary-card">
+                        <span>Won Items</span>
+                        <strong id="wonCount">0</strong>
+                    </div>
+                    <div class="summary-card">
+                        <span>My Listings</span>
+                        <strong id="listingCount">0</strong>
+                    </div>
+                </div>
+
+                <div class="dashboard-content" id="dashboardContent">
+                    <!-- Dashboard content generated by script.js -->
+                </div>
+            </div>
+        </section>
+
+        <!-- SELL WITH US -->
+        <section class="seller-banner">
+            <div class="container seller-banner-inner">
+                <div>
+                    <div class="eyebrow">HAVE SOMETHING EXTRAORDINARY?</div>
+                    <h2>Every great object<br>deserves its <em>moment.</em></h2>
+                    <p>Present your collection to an audience of passionate collectors.</p>
+                </div>
+                <button class="btn btn-gold" id="sellItemButton">List an Item ↗</button>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section class="section section-dark" id="about">
+            <div class="container about-grid">
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1577083552431-6e5fd01aa342?auto=format&fit=crop&w=1100&q=85"
+                         alt="Curated art in a gallery">
+                    <div class="about-image-caption">A LEGACY OF DISCOVERY</div>
+                </div>
+
+                <div class="about-content">
+                    <div class="eyebrow">OUR STORY</div>
+                    <h2>More than an object.<br><em>A lasting legacy.</em></h2>
+                    <p>
+                        Auction House celebrates the stories, craftsmanship and
+                        cultural significance behind exceptional objects.
+                    </p>
+                    <p>
+                        Our digital auction experience brings collectors and
+                        enthusiasts together to discover art, antiques,
+                        jewelry and rare pieces from around the world.
+                    </p>
+
+                    <div class="about-values">
+                        <div><strong>01</strong><span>Curated with care</span></div>
+                        <div><strong>02</strong><span>Built on trust</span></div>
+                        <div><strong>03</strong><span>Inspired by history</span></div>
+                    </div>
+                    <a href="#contact" class="btn btn-outline">Get in Touch ↗</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- JOURNAL -->
+        <section class="section section-darker" id="journal">
+            <div class="container">
+                <div class="section-heading">
+                    <div>
+                        <div class="eyebrow">THE COLLECTOR'S JOURNAL</div>
+                        <h2>Stories worth <em>knowing.</em></h2>
+                        <p>Insights, collecting guides and stories from the auction world.</p>
+                    </div>
+                </div>
+
+                <div class="journal-grid">
+                    <article class="journal-card">
+                        <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?auto=format&fit=crop&w=800&q=80"
+                             alt="Artwork in a gallery">
+                        <div class="journal-meta">COLLECTING GUIDE · 5 MIN READ</div>
+                        <h3>How to Begin Your Art Collection</h3>
+                        <p>Learn how to discover works that reflect your taste and interests.</p>
+                        <a href="#contact" class="text-link">Read story ↗</a>
+                    </article>
+
+                    <article class="journal-card">
+                        <img src="https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=800&q=80"
+                             alt="Fine jewelry">
+                        <div class="journal-meta">OBJECTS & ORIGINS · 4 MIN READ</div>
+                        <h3>The Enduring Appeal of Fine Jewelry</h3>
+                        <p>Explore the craftsmanship and design behind timeless pieces.</p>
+                        <a href="#contact" class="text-link">Read story ↗</a>
+                    </article>
+
+                    <article class="journal-card">
+                        <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=800&q=80"
+                             alt="Classic luxury car">
+                        <div class="journal-meta">MARKET INSIGHTS · 6 MIN READ</div>
+                        <h3>What Makes a Collectible Extraordinary?</h3>
+                        <p>Discover the role of provenance, rarity and condition.</p>
+                        <a href="#contact" class="text-link">Read story ↗</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section class="section section-dark" id="contact">
+            <div class="container contact-grid">
+                <div class="contact-info">
+                    <div class="eyebrow">LET'S CONNECT</div>
+                    <h2>Begin a <em>conversation.</em></h2>
+                    <p>Questions about bidding, consignments or our collections? We'd love to hear from you.</p>
+
+                    <div class="contact-detail">
+                        <span>✉</span>
+                        <div><small>EMAIL</small><strong>hello@auctionhouse.example</strong></div>
+                    </div>
+                    <div class="contact-detail">
+                        <span>⌖</span>
+                        <div><small>VISIT</small><strong>Gallery District, Jaipur, India</strong></div>
+                    </div>
+                    <p class="demo-note">Demonstration project: contact details are sample data.</p>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="contactName">Your Name</label>
+                            <input type="text" id="contactName" required
+                                   placeholder="Full name">
+                        </div>
+                        <div class="form-group">
+                            <label for="contactEmail">Email Address</label>
+                            <input type="email" id="contactEmail" required
+                                   placeholder="you@example.com">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="contactSubject">Subject</label>
+                        <select id="contactSubject" required>
+                            <option value="">Select a subject</option>
+                            <option>Bidding Inquiry</option>
+                            <option>Selling an Item</option>
+                            <option>Account Support</option>
+                            <option>General Inquiry</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="contactMessage">Message</label>
+                        <textarea id="contactMessage" rows="5" required
+                                  placeholder="How can we help?"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-gold">Send Inquiry ↗</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- NEWSLETTER -->
+        <section class="newsletter-section">
+            <div class="container newsletter-inner">
+                <div>
+                    <div class="eyebrow">THE AUCTION LETTER</div>
+                    <h2>Exceptional finds, <em>delivered.</em></h2>
+                    <p>Receive updates about upcoming auctions and new collections.</p>
+                </div>
+                <form id="newsletterForm" class="newsletter-form">
+                    <label for="newsletterEmail" class="sr-only">Email address</label>
+                    <input type="email" id="newsletterEmail"
+                           placeholder="Your email address" required>
+                    <button class="btn btn-gold" type="submit">Subscribe ↗</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container footer-main">
+            <div class="footer-brand">
+                <a href="#home" class="brand">
+                    <span class="brand-icon">A</span>
+                    <span class="brand-text">
+                        <strong>AUCTION HOUSE</strong>
+                        <small>EST. 1986 · FINE OBJECTS</small>
+                    </span>
+                </a>
+                <p>Exceptional objects.<br>Extraordinary stories.</p>
+            </div>
+
+            <div class="footer-column">
+                <h4>EXPLORE</h4>
+                <a href="#auctions">Auctions</a>
+                <a href="#categories">Collections</a>
+                <a href="#calendar">Auction Calendar</a>
+                <a href="#journal">Journal</a>
+            </div>
+
+            <div class="footer-column">
+                <h4>PARTICIPATE</h4>
+                <a href="#dashboard">My Dashboard</a>
+                <a href="#dashboard" id="footerWatchlist">My Watchlist</a>
+                <button class="footer-action" id="footerSellButton">Sell with Us</button>
+                <button class="footer-action" id="footerRegisterButton">Register to Bid</button>
+            </div>
+
+            <div class="footer-column">
+                <h4>INFORMATION</h4>
+                <a href="#about">About Us</a>
+                <a href="#contact">Contact</a>
+                <a href="#contact">Help & Support</a>
+                <a href="#home">Privacy & Terms</a>
+            </div>
+        </div>
+
+        <div class="container footer-bottom">
+            <span>© <span id="currentYear">2026</span> Auction House. Educational demo project.</span>
+            <span>CRAFTED FOR THE LOVE OF COLLECTING ✦</span>
+        </div>
+    </footer>
+
+    <!-- AUCTION DETAIL MODAL -->
+    <div class="modal" id="auctionModal" aria-hidden="true">
+        <div class="modal-backdrop" data-close="auctionModal"></div>
+        <div class="modal-panel modal-large" role="dialog"
+             aria-modal="true" aria-labelledby="detailTitle">
+            <button class="modal-close" data-close="auctionModal"
+                    aria-label="Close dialog">×</button>
+            <div id="auctionDetailContent"></div>
+        </div>
+    </div>
+
+    <!-- BID MODAL -->
+    <div class="modal" id="bidModal" aria-hidden="true">
+        <div class="modal-backdrop" data-close="bidModal"></div>
+        <div class="modal-panel" role="dialog"
+             aria-modal="true" aria-labelledby="bidModalTitle">
+            <button class="modal-close" data-close="bidModal"
+                    aria-label="Close dialog">×</button>
+            <div class="eyebrow">MAKE YOUR MOVE</div>
+            <h2 id="bidModalTitle">Place Your Bid</h2>
+            <p id="bidItemName" class="modal-description"></p>
+            <div class="bid-current-price">
+                <span>Current highest bid</span>
+                <strong id="bidCurrentPrice">₹0</strong>
+            </div>
+            <form id="bidForm">
+                <input type="hidden" id="bidAuctionId">
+                <div class="form-group">
+                    <label for="bidAmount">Your Bid Amount (₹)</label>
+                    <input type="number" id="bidAmount" min="1"
+                           step="1" required>
+                    <small id="bidHint">Enter a valid bid amount.</small>
+                </div>
+                <button type="submit" class="btn btn-gold btn-full">
+                    Confirm Bid ↗
+                </button>
+                <p class="demo-note">Demo only. No real money will be charged.</p>
+            </form>
+        </div>
+    </div>
+
+    <!-- LOGIN / REGISTER MODAL -->
+    <div class="modal" id="authModal" aria-hidden="true">
+        <div class="modal-backdrop" data-close="authModal"></div>
+        <div class="modal-panel" role="dialog"
+             aria-modal="true" aria-labelledby="authTitle">
+            <button class="modal-close" data-close="authModal"
+                    aria-label="Close dialog">×</button>
+
+            <div class="auth-brand">A</div>
+            <div class="eyebrow">WELCOME TO AUCTION HOUSE</div>
+            <h2 id="authTitle">Join the <em>collection.</em></h2>
+            <p class="modal-description" id="authDescription">
+                Sign in to follow lots and participate in auctions.
+            </p>
+
+            <div class="auth-switch">
+                <button type="button" class="auth-tab active" data-auth="login">Sign In</button>
+                <button type="button" class="auth-tab" data-auth="register">Create Account</button>
+            </div>
+
+            <form id="authForm">
+                <div class="form-group" id="authNameGroup" hidden>
+                    <label for="authName">Full Name</label>
+                    <input type="text" id="authName" placeholder="Your full name">
+                </div>
+                <div class="form-group">
+                    <label for="authEmail">Email Address</label>
+                    <input type="email" id="authEmail" required
+                           placeholder="you@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="authPassword">Password</label>
+                    <input type="password" id="authPassword" required
+                           minlength="6" placeholder="At least 6 characters">
+                </div>
+                <div class="form-group" id="authRoleGroup" hidden>
+                    <label for="authRole">Account Type</label>
+                    <select id="authRole">
+                        <option value="bidder">Bidder / Collector</option>
+                        <option value="seller">Seller</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-gold btn-full" id="authSubmit">
+                    Sign In ↗
+                </button>
+            </form>
+            <p class="demo-note">
+                Frontend demonstration only. Do not use a real password.
+            </p>
+        </div>
+    </div>
+
+    <!-- SELLER LISTING MODAL -->
+    <div class="modal" id="sellerModal" aria-hidden="true">
+        <div class="modal-backdrop" data-close="sellerModal"></div>
+        <div class="modal-panel" role="dialog"
+             aria-modal="true" aria-labelledby="sellerModalTitle">
+            <button class="modal-close" data-close="sellerModal"
+                    aria-label="Close dialog">×</button>
+            <div class="eyebrow">SELL WITH US</div>
+            <h2 id="sellerModalTitle">List an <em>exceptional item.</em></h2>
+            <p class="modal-description">
+                Add a sample listing to your seller dashboard.
+            </p>
+            <form id="sellerForm">
+                <div class="form-group">
+                    <label for="sellerItemTitle">Item Title</label>
+                    <input type="text" id="sellerItemTitle" required
+                           maxlength="100" placeholder="Name of your item">
+                </div>
+                <div class="form-group">
+                    <label for="sellerCategory">Category</label>
+                    <select id="sellerCategory" required>
+                        <option value="Art">Art & Paintings</option>
+                        <option value="Antiques">Antiques & Collectibles</option>
+                        <option value="Jewelry">Jewelry & Watches</option>
+                        <option value="Luxury">Luxury & Automobiles</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="sellerDescription">Description</label>
+                    <textarea id="sellerDescription" rows="3" required
+                              maxlength="1000" placeholder="Describe the item"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="sellerPrice">Starting Price (₹)</label>
+                    <input type="number" id="sellerPrice" min="1"
+                           step="1" required placeholder="50000">
+                </div>
+                <button type="submit" class="btn btn-gold btn-full">
+                    Submit Listing ↗
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- NOTIFICATION TOAST -->
+    <div class="toast-container" id="toastContainer"
+         aria-live="polite" aria-atomic="true"></div>
+
+    <button class="back-to-top" id="backToTop"
+            aria-label="Back to top">↑</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
